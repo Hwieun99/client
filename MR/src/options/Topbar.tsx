@@ -17,12 +17,12 @@ function Topbar() {
     return (
         <nav className = "topbar">
             <div className="bar_logo">
-                <FaAdversal className="logo"/>
+                 <img src = "./img/mainLogo.png"/>
                 <a>MyRecord</a>
             </div>
             <div className="bar_search">
                 <input type = "text" placeholder = "Search..." value = {Keyword} onChange = {onchange}/>
-                <FaSearch className="logo" onClick = {onclick}/>
+                <button className="search_btn"><FaSearch className="logo" onClick = {onclick}/></button>
             </div>
             <div className="bar_info">
                 <button className="small_btn">Login</button>
