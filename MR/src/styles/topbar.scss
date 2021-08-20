@@ -1,26 +1,56 @@
 .topbar {
   display: flex;
+  margin: 0;
   justify-content: space-between;
   align-items: center;
   background-color: #a9d0f5;
-  padding: 10px 15px;
+  border-bottom: 1px solid rgba(1, 1, 1, 0.3);
+  padding: 15px 15px;
+  animation: fadeIn 0.8s linear;
+  position: fixed;
+  width: 100%;
 }
 
-  .a {
-    text-decoration: none;
-    color: white;
-  }
+.bar_logo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.bar_logo a {
+  font-weight: 600;
+  font-size: 25px;
+  text-decoration: double;
+}
+.bar_logo img {
+  width: 30px;
+}
+.logo {
+  font-size: 20px;
+}
 
-  .logo {
-    font-size: 20px;
-  }
+.bar_search input {
+  padding: 7px 3px;
+  margin-right: 8px;
+  border: none;
+  outline: none;
+  border-radius: 10px;
+  font-size: 15px;
+}
 
-  .bar_search input {
-    padding: 10px 0px;
-    margin-right: 8px;
-  }
+.bar_info button {
+  margin-right: 8px;
+  cursor: pointer;
+  border: none;
+  outline: none;
+}
 
-  .bar_info button {
-    margin-right: 8px;
+@keyframes fadeIn {
+  from {
+    transform: translateY(10px);
+    opacity: 0;
+  }
+  to {
+    transform: none;
+    opacity: 0.8;
   }
 }
